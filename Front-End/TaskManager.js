@@ -40,7 +40,7 @@ const TaskManager = () => {
       </form>
       <ul>
         {tasks.map(task => (
-          <li key={task.id}>
+          <li key={task.id} style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
             <span>{task.title}</span>
             <button onClick={() => handleTaskCompletion(task.id)}>{task.completed ? 'Undo' : 'Complete'}</button>
             <button onClick={() => handleTaskDelete(task.id)}>Delete</button>
@@ -52,4 +52,3 @@ const TaskManager = () => {
 }
 
 export default TaskManager;
-
