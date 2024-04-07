@@ -17,11 +17,11 @@ const TaskManager = () => {
   };
 
   const handleTaskDelete = (taskId) => {
-    setTasks(tasks.filter(task => task.id !== taskId));
+    setTasks(tasks => tasks.filter(task => task.id !== taskId));
   };
 
   const handleTaskCompletion = (taskId) => {
-    setTasks(tasks.map(task =>
+    setTasks(tasks => tasks.map(task =>
       task.id === taskId ? { ...task, completed: !task.completed } : task
     ));
   };
