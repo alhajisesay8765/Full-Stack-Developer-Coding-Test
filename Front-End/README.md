@@ -1,6 +1,6 @@
 # Full-Stack-Developer-Coding-Test
-# Front-End Section A
-# Task Management
+## Front-End Section A
+## Task Management
 
 A simple task management component built with React.
 
